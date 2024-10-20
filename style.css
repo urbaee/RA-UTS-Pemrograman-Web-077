@@ -5,8 +5,8 @@
 }
 
 body {
-    height: 100vh; /* Panjang halaman untuk uji scroll */
-    overflow: hidden; /* Hilangkan scrollbar */
+    height: 100vh;
+    overflow: hidden;
     position: relative;
     color: white;
     overflow: hidden;
@@ -28,12 +28,11 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: opacity 1s ease-in-out; /* Transisi smooth */
-    opacity: 1; /* Background pertama terlihat */
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
     z-index: -1;
 }
 
-  /* Pseudo-element untuk background kedua */
 body::after {
     content: "";
     position: fixed;
@@ -48,8 +47,8 @@ body::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: opacity 1s ease-in-out; /* Transisi smooth */
-    opacity: 0; /* Background kedua tersembunyi awalnya */
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
     z-index: -2;
 }
 
@@ -58,11 +57,11 @@ body::after {
 }
 
 body.show-second-bg::before {
-    opacity: 0; /* Sembunyikan background pertama */
+    opacity: 0;
 }
 
 body.show-second-bg::after {
-    opacity: 1; /* Tampilkan background kedua */
+    opacity: 1;
 }
 
 .text1 {
