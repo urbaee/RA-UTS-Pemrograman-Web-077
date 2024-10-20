@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tae-Yong Site | Rahmat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="header fixed-top">
+    <img src="../images/TY.png" alt="Logo">
+    <h1 class="fs-1 fs-md-4 fs-lg-3">Tae-Yong Site</h1>
+
+    <button id="toggleSidebar" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+  </header>
+
+  <div id="sidebar" class="bg-dark">
+    <h4 class="text-center text-white py-4">Sidebar Menu</h4>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#profile">Shin Tae Yong Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../form/form.html">Feedback</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Data</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="wrapper">
+    <div class="container h-100 top-max">
+        <h1 class="text1 fs-sm-3 fs-md-4 fs-lg-5">Feedback Data Recapitulation</h1>
+        <h3 class="text1 fs-sm-3 fs-md-4 fs-lg-5">Presented in Table Form</h3>
+        <div class="table-container table-responsive">
+          <table class="table table-striped">
+                <thead class="table-dark text-center">
+                    <tr class="fs-lg-5 fs-md-4 fs-sm-3 sticky-header">
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Origin</th>
+                        <th>Email</th>
+                        <th>Positive Impression</th>
+                        <th>Suggested Changes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr class="h-card">
+                    <td>1</td>
+                    <td class="p-name">Fira Aprilia</td>
+                    <td class="p-locality">Yogyakarta</td>
+                    <td><a class="u-email" href="mailto:fira@example.com">fira@example.com</a></td>
+                    <td>Desain minimalis dan elegan.</td>
+                    <td>Harapannya ada fitur rekomendasi produk.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>2</td>
+                        <td class="p-name">Gilang Pratama</td>
+                        <td class="p-locality">Bandung</td>
+                        <td><a class="u-email" href="mailto:gilang@example.com">gilang@example.com</a></td>
+                        <td>Fitur filter produk sangat membantu.</td>
+                        <td>Tampilan website di mobile kurang konsisten.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>3</td>
+                        <td class="p-name">Hana Rahmawati</td>
+                        <td class="p-locality">Surabaya</td>
+                        <td><a class="u-email" href="mailto:hana@example.com">hana@example.com</a></td>
+                        <td>Proses pembayaran sangat cepat.</td>
+                        <td>Informasi produk kurang lengkap.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>4</td>
+                        <td class="p-name">Ilham Maulana</td>
+                        <td class="p-locality">Medan</td>
+                        <td><a class="u-email" href="mailto:ilham@example.com">ilham@example.com</a></td>
+                        <td>Pilihan pembayaran beragam.</td>
+                        <td>Desain website kurang menarik.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>5</td>
+                        <td class="p-name">Jaya Kusuma</td>
+                        <td class="p-locality">Jakarta</td>
+                        <td><a class="u-email" href="mailto:jaya@example.com">jaya@example.com</a></td>
+                        <td>Website mudah dinavigasi.</td>
+                        <td>Perlu ada fitur live chat 24 jam.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>6</td>
+                        <td class="p-name">Bayu Kurniawan</td>
+                        <td class="p-locality">Medan</td>
+                        <td><a class="u-email" href="mailto:bayu@example.com">bayu@example.com</a></td>
+                        <td>Proses registrasi cepat.</td>
+                        <td>Tambahkan metode pembayaran digital.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>7</td>
+                        <td class="p-name">Lina Safitri</td>
+                        <td class="p-locality">Malang</td>
+                        <td><a class="u-email" href="mailto:lina@example.com">lina@example.com</a></td>
+                        <td>Tampilan bersih dan nyaman.</td>
+                        <td>Butuh lebih banyak testimonial.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>8</td>
+                        <td class="p-name">Denny Wijaya</td>
+                        <td class="p-locality">Bogor</td>
+                        <td><a class="u-email" href="mailto:denny@example.com">denny@example.com</a></td>
+                        <td>Fitur lengkap.</td>
+                        <td>Integrasikan fitur tracking pengiriman.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>9</td>
+                        <td class="p-name">Vina Oktavia</td>
+                        <td class="p-locality">Palembang</td>
+                        <td><a class="u-email" href="mailto:vina@example.com">vina@example.com</a></td>
+                        <td>Produk ditampilkan rapi.</td>
+                        <td>Tambahkan filter harga.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>10</td>
+                        <td class="p-name">Rafi Ahmad</td>
+                        <td class="p-locality">Semarang</td>
+                        <td><a class="u-email" href="mailto:rafi@example.com">rafi@example.com</a></td>
+                        <td>Komunikatif dengan pengguna.</td>
+                        <td>Perlu lebih banyak pilihan warna tema.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>11</td>
+                        <td class="p-name">Dewi Kartika</td>
+                        <td class="p-locality">Makassar</td>
+                        <td><a class="u-email" href="mailto:dewi@example.com">dewi@example.com</a></td>
+                        <td>Teks mudah dibaca.</td>
+                        <td>Tambahkan mode offline.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>12</td>
+                        <td class="p-name">Budi Setiawan</td>
+                        <td class="p-locality">Pekanbaru</td>
+                        <td><a class="u-email" href="mailto:budi@example.com">budi@example.com</a></td>
+                        <td>Konsisten dengan brand identity.</td>
+                        <td>Integrasikan dengan media sosial.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>13</td>
+                        <td class="p-name">Novi Andriani</td>
+                        <td class="p-locality">Batam</td>
+                        <td><a class="u-email" href="mailto:novi@example.com">novi@example.com</a></td>
+                        <td>Pilihan produk lengkap.</td>
+                        <td>Tambahkan fitur wishlist.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>14</td>
+                        <td class="p-name">Arya Nugraha</td>
+                        <td class="p-locality">Tangerang</td>
+                        <td><a class="u-email" href="mailto:arya@example.com">arya@example.com</a></td>
+                        <td>Produk update secara berkala.</td>
+                        <td>Berikan fitur chat dengan penjual.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>15</td>
+                        <td class="p-name">Lusi Putri</td>
+                        <td class="p-locality">Solo</td>
+                        <td><a class="u-email" href="mailto:lusi@example.com">lusi@example.com</a></td>
+                        <td>Desain fresh dan modern.</td>
+                        <td>Tambahkan fitur notifikasi.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>16</td>
+                        <td class="p-name">Yoga Pranata</td>
+                        <td class="p-locality">Banjarmasin</td>
+                        <td><a class="u-email" href="mailto:yoga@example.com">yoga@example.com</a></td>
+                        <td>Aksesibilitas bagus.</td>
+                        <td>Tambahkan fitur mode hemat data.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>17</td>
+                        <td class="p-name">Anita Kusuma</td>
+                        <td class="p-locality">Jambi</td>
+                        <td><a class="u-email" href="mailto:anita@example.com">anita@example.com</a></td>
+                        <td>Tampilan profesional.</td>
+                        <td>Butuh fitur live support.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>18</td>
+                        <td class="p-name">Ardi Prasetyo</td>
+                        <td class="p-locality">Pontianak</td>
+                        <td><a class="u-email" href="mailto:ardi@example.com">ardi@example.com</a></td>
+                        <td>Konten mudah dipahami.</td>
+                        <td>Tambahkan video tutorial.</td>
+                    </tr>
+                    <tr class="h-card">
+                        <td>19</td>
+                        <td class="p-name">Santi Dewi</td>
+                        <td class="p-locality">Padang</td>
+                        <td><a class="u-email" href="mailto:santi@example.com">santi@example.com</a></td>
+                        <td>Responsif di semua perangkat.</td>
+                        <td>Butuh lebih banyak animasi interaktif.</td>
+                    </tr>
+                    <tr class="h-card">
+                      <td>20</td>
+                      <td class="p-name">Hadi Kurnia</td>
+                      <td class="p-locality">Manado</td>
+                      <td><a class="u-email" href="mailto:hadi@example.com">hadi@example.com</a></td>
+                      <td>Navigasi intuitif.</td>
+                      <td>Tambahkan fitur login via Google.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>21</td>
+                      <td class="p-name">Gilang Saputra</td>
+                      <td class="p-locality">Balikpapan</td>
+                      <td><a class="u-email" href="mailto:gilang@example.com">gilang@example.com</a></td>
+                      <td>Desain interaktif dan mudah dipahami.</td>
+                      <td>Tambahkan fitur pembanding produk.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>22</td>
+                      <td class="p-name">Maya Rizkiani</td>
+                      <td class="p-locality">Depok</td>
+                      <td><a class="u-email" href="mailto:maya@example.com">maya@example.com</a></td>
+                      <td>Tampilan visual menarik.</td>
+                      <td>Harap tambahkan fitur penilaian produk.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>23</td>
+                      <td class="p-name">Andi Wijaya</td>
+                      <td class="p-locality">Kediri</td>
+                      <td><a class="u-email" href="mailto:andi@example.com">andi@example.com</a></td>
+                      <td>Proses checkout cepat.</td>
+                      <td>Tambahkan lebih banyak metode pengiriman.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>24</td>
+                      <td class="p-name">Dina Rahmawati</td>
+                      <td class="p-locality">Magelang</td>
+                      <td><a class="u-email" href="mailto:dina@example.com">dina@example.com</a></td>
+                      <td>Desain profesional dan rapi.</td>
+                      <td>Butuh lebih banyak variasi produk lokal.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>25</td>
+                      <td class="p-name">Yudi Kurniawan</td>
+                      <td class="p-locality">Medan</td>
+                      <td><a class="u-email" href="mailto:yudi@example.com">yudi@example.com</a></td>
+                      <td>Fitur pencarian produk cepat.</td>
+                      <td>Tambahkan opsi pembayaran cicilan.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>26</td>
+                      <td class="p-name">Rina Oktaviani</td>
+                      <td class="p-locality">Maluku</td>
+                      <td><a class="u-email" href="mailto:rina@example.com">rina@example.com</a></td>
+                      <td>Responsif di berbagai perangkat.</td>
+                      <td>Tambahkan fitur komunitas pengguna.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>27</td>
+                      <td class="p-name">Hendra Purnama</td>
+                      <td class="p-locality">Samarinda</td>
+                      <td><a class="u-email" href="mailto:hendra@example.com">hendra@example.com</a></td>
+                      <td>Penggunaannya mudah dipelajari.</td>
+                      <td>Tambahkan fitur penawaran khusus anggota.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>28</td>
+                      <td class="p-name">Wulan Fitriani</td>
+                      <td class="p-locality">Banten</td>
+                      <td><a class="u-email" href="mailto:wulan@example.com">wulan@example.com</a></td>
+                      <td>Pilihan produk lengkap.</td>
+                      <td>Tambahkan lebih banyak promo harian.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>29</td>
+                      <td class="p-name">Reza Putra</td>
+                      <td class="p-locality">Ambon</td>
+                      <td><a class="u-email" href="mailto:reza@example.com">reza@example.com</a></td>
+                      <td>Tampilan dinamis dan menarik.</td>
+                      <td>Tambahkan fitur untuk menampilkan produk yang disukai.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>30</td>
+                      <td class="p-name">Dewi Sri</td>
+                      <td class="p-locality">Kupang</td>
+                      <td><a class="u-email" href="mailto:dewi@example.com">dewi@example.com</a></td>
+                      <td>Proses pembayaran mudah.</td>
+                      <td>Perlu ada notifikasi status pengiriman.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>31</td>
+                      <td class="p-name">Eka Yulianto</td>
+                      <td class="p-locality">Cirebon</td>
+                      <td><a class="u-email" href="mailto:eka@example.com">eka@example.com</a></td>
+                      <td>UI responsif.</td>
+                      <td>Tambahkan fitur wishlist.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>32</td>
+                      <td class="p-name">Mira Anindya</td>
+                      <td class="p-locality">Solo</td>
+                      <td><a class="u-email" href="mailto:mira@example.com">mira@example.com</a></td>
+                      <td>Desain simple dan rapi.</td>
+                      <td>Harap tambahkan fitur review video dari pengguna.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>33</td>
+                      <td class="p-name">Robby Febrianto</td>
+                      <td class="p-locality">Malang</td>
+                      <td><a class="u-email" href="mailto:robby@example.com">robby@example.com</a></td>
+                      <td>Proses registrasi sangat mudah.</td>
+                      <td>Tambahkan fitur pembelian cepat.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>34</td>
+                      <td class="p-name">Susi Amelia</td>
+                      <td class="p-locality">Manado</td>
+                      <td><a class="u-email" href="mailto:susi@example.com">susi@example.com</a></td>
+                      <td>Desain modern dan profesional.</td>
+                      <td>Perlu ditambah fitur filter kategori produk.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>35</td>
+                      <td class="p-name">Guntur Satria</td>
+                      <td class="p-locality">Pekanbaru</td>
+                      <td><a class="u-email" href="mailto:guntur@example.com">guntur@example.com</a></td>
+                      <td>Tampilan situs sangat intuitif.</td>
+                      <td>Tambahkan fitur live chat support.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>36</td>
+                      <td class="p-name">Dwi Lestari</td>
+                      <td class="p-locality">Tangerang</td>
+                      <td><a class="u-email" href="mailto:dwi@example.com">dwi@example.com</a></td>
+                      <td>Proses pencarian cepat.</td>
+                      <td>Butuh lebih banyak filter produk.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>37</td>
+                      <td class="p-name">Ilham Fikri</td>
+                      <td class="p-locality">Bogor</td>
+                      <td><a class="u-email" href="mailto:ilham@example.com">ilham@example.com</a></td>
+                      <td>Desain elegan dan menarik.</td>
+                      <td>Tambahkan fitur ulasan video.</td>
+                  </tr>
+                  <tr class="h-card">
+                      <td>38</td>
+                      <td class="p-name">Anisa Maulida</td>
+                      <td class="p-locality">Bandung</td>
+                      <td><a class="u-email" href="mailto:anisa@example.com">anisa@example.com</a></td>
+                      <td>Fitur produk lengkap dan informatif.</td>
+                      <td>Tambahkan fitur komparasi produk.</td>
+                  </tr>
+                  <tr class="h-card">
+                    <td>39</td>
+                    <td class="p-name">Vito Pratama</td>
+                    <td class="p-locality">Denpasar</td>
+                    <td><a class="u-email" href="mailto:vito@example.com">vito@example.com</a></td>
+                    <td>Tampilan responsif.</td>
+                    <td>Tambahkan lebih banyak opsi pembayaran.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>40</td>
+                    <td class="p-name">Ayana Putri</td>
+                    <td class="p-locality">Surabaya</td>
+                    <td><a class="u-email" href="mailto:ayana@example.com">ayana@example.com</a></td>
+                    <td>Desain clean dan nyaman.</td>
+                    <td>Tambahkan fitur wishlist untuk pengguna.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>41</td>
+                    <td class="p-name">Bambang Setiawan</td>
+                    <td class="p-locality">Surakarta</td>
+                    <td><a class="u-email" href="mailto:bambang@example.com">bambang@example.com</a></td>
+                    <td>Navigasi situs sangat jelas.</td>
+                    <td>Tambahkan fitur rating produk.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>42</td>
+                    <td class="p-name">Aulia Zahra</td>
+                    <td class="p-locality">Bekasi</td>
+                    <td><a class="u-email" href="mailto:aulia@example.com">aulia@example.com</a></td>
+                    <td>Proses login cepat dan mudah.</td>
+                    <td>Tambahkan opsi login menggunakan Facebook.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>43</td>
+                    <td class="p-name">Dani Firmansyah</td>
+                    <td class="p-locality">Palangkaraya</td>
+                    <td><a class="u-email" href="mailto:dani@example.com">dani@example.com</a></td>
+                    <td>Konten informatif.</td>
+                    <td>Tambahkan fitur blog untuk artikel terkait.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>44</td>
+                    <td class="p-name">Sara Putri</td>
+                    <td class="p-locality">Tegal</td>
+                    <td><a class="u-email" href="mailto:sara@example.com">sara@example.com</a></td>
+                    <td>Tampilan warna lembut dan nyaman di mata.</td>
+                    <td>Tambahkan dark mode untuk malam hari.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>45</td>
+                    <td class="p-name">Joko Santoso</td>
+                    <td class="p-locality">Yogyakarta</td>
+                    <td><a class="u-email" href="mailto:joko@example.com">joko@example.com</a></td>
+                    <td>Proses transaksi aman.</td>
+                    <td>Tambahkan autentikasi dua faktor.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>46</td>
+                    <td class="p-name">Farah Amelia</td>
+                    <td class="p-locality">Serang</td>
+                    <td><a class="u-email" href="mailto:farah@example.com">farah@example.com</a></td>
+                    <td>Tampilan profesional.</td>
+                    <td>Tambahkan fitur live tracking pengiriman.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>47</td>
+                    <td class="p-name">Ahmad Ridwan</td>
+                    <td class="p-locality">Jayapura</td>
+                    <td><a class="u-email" href="mailto:ahmad@example.com">ahmad@example.com</a></td>
+                    <td>UI dan UX ramah pengguna.</td>
+                    <td>Tambahkan fitur promo musiman.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>48</td>
+                    <td class="p-name">Elsa Kurnia</td>
+                    <td class="p-locality">Probolinggo</td>
+                    <td><a class="u-email" href="mailto:elsa@example.com">elsa@example.com</a></td>
+                    <td>Tampilan elegan dan minimalis.</td>
+                    <td>Tambahkan opsi pengiriman cepat.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>49</td>
+                    <td class="p-name">Bayu Hidayat</td>
+                    <td class="p-locality">Madiun</td>
+                    <td><a class="u-email" href="mailto:bayu@example.com">bayu@example.com</a></td>
+                    <td>Pilihan produk beragam.</td>
+                    <td>Tambahkan fitur diskon khusus member.</td>
+                </tr>
+                <tr class="h-card">
+                    <td>50</td>
+                    <td class="p-name">Nadia Anisa</td>
+                    <td class="p-locality">Kendari</td>
+                    <td><a class="u-email" href="mailto:nadia@example.com">nadia@example.com</a></td>
+                    <td>Proses checkout mudah.</td>
+                    <td>Tambahkan lebih banyak opsi pembayaran digital.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+      <footer class="bg-dark p-2 w-100 mb-0 mt-auto fs-sm-3 fs-md-4 fs-lg-5 h-card">
+          <div class="text-center p-3 text1" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a href="https://github.com/urbaee"  target="_blank" class="p-name" style="color: white; text-decoration: none;" >© 2024 Rahmat Aldi Nasda 122140077. All rights reserved.</a>
+          </div>
+      </footer>
+  </div>
+
+  <script>
+    const toggleSidebar = document.getElementById('toggleSidebar');
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('main-content');
+
+    toggleSidebar.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+      mainContent.classList.toggle('sidebar-open');
+    });
+  </script>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      var navbar = document.querySelector(".header");
+      if (window.scrollY > 20) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+</body>
+</html>

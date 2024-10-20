@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tae-Yong Site | Rahmat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header" class="header fixed-top">
+    <img src="images/TY.png" alt="Logo">
+    <h1 class="fs-1 fs-md-4 fs-lg-3">Tae-Yong Site</h1>
+
+    <button id="toggleSidebar" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+  </header>
+
+  <div id="sidebar" class="bg-dark">
+    <h4 class="text-center text-white py-4">Sidebar Menu</h4>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#profile">Shin Tae Yong Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="form/form.html">Feedback</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="table/tabel.html">Data</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container h-100">
+    <div id="title-content" class="title-content d-flex flex-column align-items-center justify-content-center h-100">
+      <h1 class="fs-sm-3 fs-md-4 fs-lg-5 p-4 p-name"><strong>SHIN TAE YONG</strong></h1>
+      <p class="h5">
+        A football philosopher who delves deep into the soul of each player, Shin Tae-yong is the sculptor of Indonesia's golden generation of football.
+      </p>
+      <p class="h5">
+        <strong>Want a quick bite of info on Shin Tae Yong? This site's got you covered.</strong>
+      </p>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div id="profile" class="container h-100">
+      <div id="main-content" class="main-content row p-4 align-items-center justify-content-center gap-3">
+        <div id="description" class="bg-blur p-2 align-items-center justify-content-center w-100 col-md-6">
+          <h1 class="fs-sm-3 fs-md-4 fs-lg-5">Who is Shin Tae Yong?</h1>
+          <p class="fs-sm-3 fs-md-4 fs-lg-5">Shin Tae-yong is a South Korean football coach who is currently coaching the Indonesian National Team. Previously, he had a brilliant career as a football player in South Korea and had won the Asian Champions League. After retiring as a player, Shin Tae-yong focused on coaching and had managed the South Korean National Team.
+            <br><br>
+            Since joining PSSI in 2020, Shin Tae-yong has brought a breath of fresh air to Indonesian football. Under his leadership, the Indonesian National Team has increased its FIFA ranking and has been able to compete with strong teams in Southeast Asia. Shin Tae-yong is known as a disciplined, hard-working coach who has a clear vision for developing Indonesian football. He is also very focused on coaching young players and has succeeded in creating a positive atmosphere within the team.
+            <br><br>
+            Shin Tae-yong's contribution to Indonesian football is not only seen in terms of team achievements, but also from changes in the mentality of the players and improvements in the overall quality of football. His presence in Indonesia is a new hope for football lovers in the country.
+          </p>
+        </div>
+        <div id="Biodata" class="bg-blur p-2 align-items-center justify-content-center w-100 col-md-6">
+          <h1>Biodata</h1>
+          <table class="table h-card">
+            <tr>
+                <th>Name</th>
+                <td class="p-name">Shin Tae-yong</td>
+            </tr>
+            <tr>
+                <th>Born</th>
+                <td class="p-birthdate">October 11, 1970 (age 54), Seosan, South Korea</td>
+            </tr>
+            <tr>
+                <th>Nationality</th>
+                <td class="p-country-name">South Korean</td>
+            </tr>
+            <tr>
+                <th>Position</th>
+                <td class="p-org">Indonesia National Team Coach</td>
+            </tr>
+            <tr>
+                <th>Clubs managed</th>
+                <td class="p-org">Seongnam Ilhwa Chunma (2009-2012)
+                    Jeonbuk Hyundai Motors (2013-2016)
+                    South Korea National Team (2018-present)
+                    Indonesia National Team (2019-present)</td>
+            </tr>
+            <tr>
+                <th>Achievements</th>
+                <td>2009 K-League Manager of the Year
+                    2010 AFC Champions League winner
+                    2011 K-League Manager of the Year
+                    2013 K-League Manager of the Year
+                    2016 K-League Classic champion</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark p-2 w-100 mb-0 mt-auto fs-sm-3 fs-md-4 fs-lg-5 h-card">
+      <div class="text-center p-3 text1" style="background-color: rgba(0, 0, 0, 0.2);">
+        <a href="https://github.com/urbaee"  target="_blank" class="p-name" style="color: white; text-decoration: none;" >© 2024 Rahmat Aldi Nasda 122140077. All rights reserved.</a>
+      </div>
+    </footer>
+  </div>
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <script>
+    const toggleSidebar = document.getElementById('toggleSidebar');
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('main-content');
+
+    toggleSidebar.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+      mainContent.classList.toggle('sidebar-open');
+    });
+  </script>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      var navbar = document.querySelector(".header");
+      if (window.scrollY > 250) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      if (scrollPosition > windowHeight / 2) {
+        document.body.classList.add('show-second-bg');
+      } else {
+        document.body.classList.remove('show-second-bg');
+      }
+    });
+  </script>
+</body>
+</html>

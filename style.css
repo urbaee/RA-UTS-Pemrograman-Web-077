@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; /* Panjang halaman untuk uji scroll */
+    overflow: hidden; /* Hilangkan scrollbar */
+    position: relative;
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.8), 
+      rgba(0, 0, 0, 0.2)
+    ), url('images/STY5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in-out; /* Transisi smooth */
+    opacity: 1; /* Background pertama terlihat */
+    z-index: -1;
+}
+
+  /* Pseudo-element untuk background kedua */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url('images/STY31.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in-out; /* Transisi smooth */
+    opacity: 0; /* Background kedua tersembunyi awalnya */
+    z-index: -2;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body.show-second-bg::before {
+    opacity: 0; /* Sembunyikan background pertama */
+}
+
+body.show-second-bg::after {
+    opacity: 1; /* Tampilkan background kedua */
+}
+
+.text1 {
+    font-family: 'Afacad Flux', sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.text2 {
+    font-family: 'Aldrich', sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #343a40;
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    transition: all 0.3s ease;
+    z-index: 1050; 
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+#sidebar.active {
+    left: 0; 
+}
+
+#sidebar .nav-link {
+    color: white;
+    font-size: 1.1rem;
+}
+
+#sidebar .nav-link:hover {
+    background-color: #495057;
+}
+
+.header {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    transition: background-color 0.5s ease;
+}
+
+.header.scrolled {
+    background-color: #212529 !important; 
+    box-shadow: 0px 4px 2px -2px #343a40; 
+}
+
+.header img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.header h1 {
+    font-size: 2.3rem;
+    margin-right: 40px;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.hamburger {
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.title-content {
+    font-family: 'Afacad Flux', sans-serif;
+    text-align: justify;
+}
+
+.main-content {
+    color: white;
+    font-family: 'Afacad Flux', sans-serif;
+    height: 100%;
+    text-align: justify;
+}
+
+#main-content.sidebar-open {
+    margin-left: 200px;
+}
+
+.bg-blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+table {
+    background-color: transparent;
+}
+
+#Biodata h1 {
+    text-align: center;
+}
+
+#description h1 {
+    text-align: center;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: transparent;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  margin-bottom: 5px;
+}
+
+.top-max {
+    padding-top: 150px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #e9ecef;
+}
+
+.table-striped tbody tr td:hover {
+    background-color: aqua;
+}
+
+.table-container {
+    position: relative;
+    overflow-y: auto;
+    max-height: 500px;
+    margin: 0;
+}
+
+.sticky-header th {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: #343a40; 
+    color: white;
+}
